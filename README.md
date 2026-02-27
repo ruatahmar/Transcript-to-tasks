@@ -69,11 +69,11 @@ https://xxxx.ngrok-free.app/fireflies/webhook
 
 1. Start a Google Meet
 2. Invite the Fireflies Notetaker bot to the meeting
-3. **Talk for at 3+ minutes** — Fireflies requires a minimum meeting length to process transcripts. Mention clear action items like:
+3. **Talk for atleast 5 to 6 minutes** — Fireflies requires a minimum meeting length to process transcripts. Mention clear action items like:
    - _"John needs to send the report by Friday"_
    - _"We should set up the database before the next sprint"_
    - _"Sarah will handle the UI designs"_
-4. End the meeting and wait ~5-10 minutes for Fireflies to process the transcript
+4. End the meeting and wait ~5 minutes for Fireflies to process the transcript
 5. The webhook will fire automatically — check your terminal for logs and your Trello board for new cards
 
 ## Project Structure
@@ -84,3 +84,19 @@ src/
 └── modules/
     └── services.ts # Fireflies, Gemini, and Trello
 ```
+
+## Screenshots
+
+### Demo Transcriptions:
+
+- mixing normal command words with actual tasks in between
+
+![Fireflies transcriptions](screenshots/transcription.png)
+
+### Server terminal:
+
+![Server Terminal](screenshots/terminal.png)
+
+### Card creation:
+
+![Trello Board](screenshots/Trelloboard.png)
